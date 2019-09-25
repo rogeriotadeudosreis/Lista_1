@@ -17,7 +17,8 @@ public class exercicio_10_conversao_temperatura {
 		F = entrada.nextDouble();
 
 		C = (F - 32) * 5 / 9;
-		System.out.printf("A temperatura convertidade de F para C é:%4.2f.", C);
+		System.out.printf("A temperatura convertidade de F para C é:%4.2f.\n", C);
+		System.out.println("Operação realizada com sucesso!");
 		entrada.close();
 
 	}

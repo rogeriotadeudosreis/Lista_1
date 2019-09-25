@@ -9,7 +9,7 @@ public class Exercicio_39_data_por_extenso {
 
 	public static void main(String[] args) {
 
-		int dia, mes, ano, aux;
+		int dia, mes, ano;
 		String mes_ext;
 
 		Scanner entrada = new Scanner(System.in);
