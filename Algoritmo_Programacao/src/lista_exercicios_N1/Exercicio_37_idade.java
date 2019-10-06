@@ -14,7 +14,7 @@ public class Exercicio_37_idade {
 		 System.out.println("Usuário, informe a idade:");
 		 idade = entrada.nextInt();
 		 
-		 if (idade >0 && idade <=200) {
+		 if (idade >0 ) {
 			 if (idade <=2){
 				 System.out.println(idade + "ano(s) de idade, é um Recém-nascido." );
 				 

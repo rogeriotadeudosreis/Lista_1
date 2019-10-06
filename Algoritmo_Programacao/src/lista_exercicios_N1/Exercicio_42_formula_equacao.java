@@ -38,7 +38,7 @@ public class Exercicio_42_formula_equacao {
 			System.out.println("Valor inválido.");
 		}
 
-		System.out.printf("O calculo da fórmula selecionada é: %.2f.", Y);
+		System.out.printf("O cálculo da fórmula selecionada é: %.2f.", Y);
 
 		entrada.close();
 	}
