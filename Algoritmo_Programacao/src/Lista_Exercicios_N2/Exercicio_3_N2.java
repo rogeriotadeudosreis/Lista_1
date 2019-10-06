@@ -12,21 +12,20 @@ public class Exercicio_3_N2 {
 		int numero, maior = 0, menor = 0, cont = 0;
 		double media = 0, soma = 0;
 
-		while (cont <10) {
+		while (cont < 10) {
 
 			System.out.printf("Usuário, digite o %d.o número:", cont + 1);
 			numero = entrada.nextInt();
 
-			if (cont==0) {
+			if (cont == 0) {
 				maior = numero;
 				menor = numero;
 			}
-			
+
 			if (numero > maior) {
 				maior = numero;
 
-			}
-			else if (numero < menor) {
+			} else if (numero < menor) {
 				menor = numero;
 
 			}
