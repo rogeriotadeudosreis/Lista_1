@@ -25,7 +25,7 @@ public class Exercicio_3_N2 {
 			if (numero > maior) {
 				maior = numero;
 
-			} else if (numero < menor) {
+			}  else if (numero < menor) {
 				menor = numero;
 
 			}
@@ -38,6 +38,8 @@ public class Exercicio_3_N2 {
 		System.out.printf("O maior número entre eles é: %d\n", maior);
 		System.out.printf("O menor número entre eles é: %d\n", menor);
 		System.out.printf("A média entre os números é: %.1f\n", media);
+		System.out.printf("A soma dos números é: %.0f\n", soma);
+		
 		entrada.close();
 	}
 }

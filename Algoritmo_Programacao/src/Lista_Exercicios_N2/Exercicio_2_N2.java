@@ -18,13 +18,13 @@ public class Exercicio_2_N2 {
 		int somaAte18 = 0;
 		int somaEntre18e65 = 0;
 		int somaAcima65 = 0;
-		double mediaAte18;
-		double mediaEntre18e65;
-		double mediaAcima65;
+		double mediaAte18 = 0;
+		double mediaEntre18e65 = 0;
+		double mediaAcima65 = 0;
 		char resp = 'S';
 		int cont = 0;
 
-		while (resp == 'S' || resp == 's') {
+		do {
 			do {
 				System.out.printf("Digite a %da idade:", cont + 1);
 				idade = entrada.nextInt();
@@ -32,31 +32,28 @@ public class Exercicio_2_N2 {
 					System.out.println("Idade informada inválida !, digite novamente:");
 			} while (idade <= 0);
 
-			System.out.printf("Deseja continuar ? S (Sim) ou N (Não)");
-			resp = entrada.next().charAt(0);
-
 			if (idade <= 18) {
 				quantPessoas_ate_18++;
 				somaAte18 += idade;
+				mediaAte18 = somaAte18 / quantPessoas_ate_18;
 			} else if (idade > 18 && idade <= 65) {
 				quantPessoas_entre_18_65++;
 				somaEntre18e65 += idade;
+				mediaEntre18e65 = somaEntre18e65 / quantPessoas_entre_18_65;
 			} else {
 				quantPessoas_acima_65++;
 				somaAcima65 += idade;
+				mediaAcima65 = somaAcima65 / quantPessoas_acima_65;
 			}
-
+			System.out.printf("Deseja continuar ? S (Sim) ou N (Não)\n");
+			resp = entrada.next().charAt(0);
 			cont++;
-		}
-
-		mediaAte18 = somaAte18 / quantPessoas_ate_18;
-		mediaEntre18e65 = somaEntre18e65 / quantPessoas_entre_18_65;
-		mediaAcima65 = somaAcima65 / quantPessoas_acima_65;
+		} while (resp == 'S' || resp == 's');
 
 		System.out.printf("O número de pessoas com até 18 anos é: %d\n", quantPessoas_ate_18);
 		System.out.printf("O número de pessoas entre 18 e 65 anos é: %d\n", quantPessoas_entre_18_65);
 		System.out.printf("O número de pessoas com mais de 65 anos é: %d\n", quantPessoas_acima_65);
-		System.out.printf("A Soma das idades até 18 anos é: %d\n", somaAte18);
+		System.out.printf("A soma das idades até 18 anos é: %d\n", somaAte18);
 		System.out.printf("A soma das idades entre 18 e 65 é: %d\n", somaEntre18e65);
 		System.out.printf("A soma das idades acima de 65 anos é: %d\n", somaAcima65);
 		System.out.printf("A média das idades até 18 anos é: %.1f\n", mediaAte18);
