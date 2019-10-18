@@ -25,11 +25,11 @@ public class Exercicio_1_N2 {
 			System.out.println("Número final inválido!, digite novamente:");
 			numFinal = entrada.nextInt();
 		}
-		while (numInicial <= numFinal) {
+		while (numInicial < numFinal) {
+ 
+			numInicial = numInicial + 1;
 
-			contagem = numInicial++;
-
-			System.out.printf("Contagem: %d\n", contagem);
+			System.out.printf("Contagem: %d\n", numInicial );
 		}
 
 		entrada.close();
