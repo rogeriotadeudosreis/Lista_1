@@ -18,7 +18,7 @@ public class Exercicio_5_N2 {
 		char resp = 'S';
 		int cont = 0;
 
-		 do{
+		do {
 
 			System.out.printf("Digite o %d.o número:", cont + 1);
 			num = entrada.nextInt();
@@ -29,13 +29,14 @@ public class Exercicio_5_N2 {
 			quant++;
 			cont++;
 
-		}while (resp == 'S' || resp == 's');
+		} while (resp == 'S' || resp == 's');
 		media = soma / quant;
-
-		System.out.println("Fim da digitação");
-		System.out.printf("A soma dos números é: %.1f\n", soma);
-		System.out.printf("A quantidade de números digitados foi: %d\n", quant);
-		System.out.printf("A média entre os números digitados é: %.1f\n", media);
+		System.out.println("----------------------------------------------------");
+		System.out.println("                  Fim da digitação                  ");
+		System.out.println("----------------------------------------------------");
+		System.out.printf("A soma dos números é: .........................%.1f\n", soma);
+		System.out.printf("A quantidade de números digitados foi:.........%d\n", quant);
+		System.out.printf("A média entre os números digitados é:......... %.1f\n", media);
 		entrada.close();
 	}
 }

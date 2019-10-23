@@ -51,8 +51,6 @@ public class Exercicio_16_N2 {
 					maiornum = num;
 				}
 
-				
-
 				if (num % 2 == 0) {
 
 					quantpar++;
