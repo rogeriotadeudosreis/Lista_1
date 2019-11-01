@@ -21,27 +21,28 @@ public class Exercicio_34_Desafio_repeticao_N2 {
 			System.out.printf("Informe o número de carros vendidos: ..............");
 			numCarros = teclado.nextInt();
 
+			valorTotalCarros = 0;
 			for (i = 1; i <= numCarros; i++) {
 				System.out.printf("Informe o valor do %do carro: ......................", i);
 				valorCarro = teclado.nextDouble();
 				valorTotalCarros += valorCarro;
 			}
 
-			if (numCarros <= 10 && valorTotalCarros < 50.000) {
+			if (numCarros <= 10 && valorTotalCarros < 50000) {
 				comissaoTotal = numCarros * comissao1;
 				salarioTotal = salarioFixo + comissaoTotal;
 			}
-			else if (numCarros <= 10 && valorTotalCarros > 50.000) {
+			else if (numCarros <= 10 && valorTotalCarros > 50000) {
 				comissaoTotal = numCarros * comissao1;
 				bonificacao = valorTotalCarros * percBonificacao;
 				salarioTotal = salarioFixo + comissaoTotal + bonificacao;
 
 			}
-			else if (numCarros > 10 && valorTotalCarros < 50.000) {
+			else if (numCarros > 10 && valorTotalCarros < 50000) {
 				comissaoTotal = numCarros * comissao2;
 				salarioTotal = salarioFixo + comissaoTotal;
 			}
-			else if (numCarros > 10 && valorTotalCarros > 50.000) {
+			else if (numCarros > 10 && valorTotalCarros > 50000) {
 				comissaoTotal = numCarros * comissao2;
 				bonificacao = valorTotalCarros * percBonificacao;
 				salarioTotal = salarioFixo + comissaoTotal + bonificacao;
@@ -56,6 +57,8 @@ public class Exercicio_34_Desafio_repeticao_N2 {
 			System.out.printf("Salário total do(a) vendedor(a) sob matrícula %d : R$ %.2f\n", matricula, salarioTotal);
 			System.out.println();
 			System.out.printf("Calcular vendas do próximo vendedor? 1-Sim 2-Não.........");
+			System.out.println();
+			
 			resp = teclado.nextInt();
 			cont++;
 		} while (resp == 1);

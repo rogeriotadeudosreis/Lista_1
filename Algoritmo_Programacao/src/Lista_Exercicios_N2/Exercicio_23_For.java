@@ -1,3 +1,4 @@
+
 package Lista_Exercicios_N2;
 
 /*Faça um programa que imprima os números pares e ímpares de 1 até N, onde N deverá
@@ -18,13 +19,16 @@ public class Exercicio_23_For {
 		numero = teclado.nextInt();
 		System.out.println("");
 
+		System.out.printf("----Número ímpar---- \t\t");
+		System.out.printf("----Número par---- \n");
+		
 		for (i = 1; i <= numero; i++) {
 
 			if (i % 2 != 0) {
-				System.out.printf("Número ímpar:..... %d\t\t", i);
+				System.out.printf("         %d\t\t", i);
 
 			} else {
-				System.out.printf("Número par:..... %d\n", i);
+				System.out.printf("                 %d\n", i);
 			}
 
 		}
