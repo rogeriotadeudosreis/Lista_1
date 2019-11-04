@@ -53,13 +53,13 @@ public class Exercicio_51_vetores_operacoes {
 			case "*":
 				vetorResul[i] = vetor1[i] * vetor2[i];
 				break;
-			
+
 			}
 
 		}
 		System.out.printf("\nResultado            = ");
-		for ( i = 0; i < vetorResul.length; i++) {
-			System.out.printf("[%.1f]  ",  vetorResul[i]);
+		for (i = 0; i < vetorResul.length; i++) {
+			System.out.printf("[%.1f]  ", vetorResul[i]);
 		}
 		teclado.close();
 
