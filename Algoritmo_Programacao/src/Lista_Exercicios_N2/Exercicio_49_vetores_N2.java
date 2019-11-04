@@ -25,6 +25,13 @@ public class Exercicio_49_vetores_N2 {
 		System.out.printf(
 				"\n\nDigite um código: \n\n(0) Termina o programa\n(1) Imprime Vetor\n(2) Imprime Vetor Inverso.\n> ");
 		codigo = teclado.nextInt();
+		do {
+			if (codigo != 0 && codigo != 1 && codigo != 2) {
+				System.out.println("Código inválido: digite novamente:"); 
+				codigo = teclado.nextInt();
+			}
+
+		} while (codigo != 0 && codigo != 1 && codigo != 2);
 
 		if (codigo == 1) {
 			System.out.println("\nNúmeros do vetor[i]:");
@@ -37,7 +44,7 @@ public class Exercicio_49_vetores_N2 {
 		} else if (codigo == 2) {
 
 			System.out.println("\nNúmeros do vetor[i] invertido:");
-			for (i = 9; i >=0; i--) {
+			for (i = 9; i >= 0; i--) {
 
 				System.out.printf("%.1f  ", vetor[i]);
 
