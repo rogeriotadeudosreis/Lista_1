@@ -35,36 +35,33 @@ public class Exercicio_50_vetores {
 
 		for (i = 0; i < limiteVetor1; i++) {
 			if (vetor1[i] % 2 == 0) {
-
 				somaPar = 0;
+
 				for (j = 0; j < limiteVetor2; j++) {
+					somaPar += vetor2[j];
 
-					par = vetor1[i] + vetor2[j];
-					somaPar += par;
-
-					vetorResultante1[quantpar] = somaPar;
-					vetor1[i] = 0;
 				}
+				vetorResultante1[quantpar] = vetor1[i] + somaPar;
+				vetor1[i] = 0;
+
 				quantpar++;
-				// System.out.println("");
-				// System.out.printf(" %d ", somaPar);
+
 			} else {
 
 				somaImpar = 0;
 				for (j = 0; j < limiteVetor2; j++) {
-					impar = vetor1[i] + vetor2[j];
-					somaImpar += impar;
 
-					vetorResultante2[quantimpar] = somaImpar;
-					vetor1[i] = 0;
+					somaImpar += vetor2[j];
 
 				}
+				vetorResultante2[quantimpar] = vetor1[i] + somaImpar;
+				vetor1[i] = 0;
+
 				quantimpar++;
 			}
-			// System.out.println("");
-			// System.out.printf("%d ", somaImpar);
 
 		}
+		System.out.printf("Soma dos números do vetor2[i] .....> %d", somaPar);
 		System.out.println("\n");
 		System.out.printf("Quantidade de números pares = %d\n", quantpar);
 		System.out.printf("Primeiro VetorResultante1[k] = ");
