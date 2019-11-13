@@ -22,7 +22,7 @@ public class Exercicio_56_Matriz {
 
 			for (int j = 0; j < coluna; j++) {
 
-				A[i][j] = sorteia(1, 5);
+				A[i][j] = sorteia(10, 50);
 
 				SL[i] = SL[i] + A[i][j];
 				SC[j] = SC[j] + A[i][j];
@@ -30,20 +30,20 @@ public class Exercicio_56_Matriz {
 
 			}
 
-			System.out.printf("%d  ", SL[i]);
+			System.out.printf("%d\n", SL[i]);
 
 		}
 		elementos = (linha * coluna);
-		System.out.printf("\nA quantidade de elementos do vetor A é: %d", elementos);
+		System.out.printf("\nA quantidade de elementos do vetor A é:.... %d", elementos);
 		mediavetor = somavetor / (linha * coluna);
-		System.out.printf("\nA soma dos valores do vetor A é: %d", somavetor);
-		System.out.printf("\nA média dos valores do vetor A é: %.1f", mediavetor);
+		System.out.printf("\nA soma dos valores do vetor A é: ...........%d", somavetor);
+		System.out.printf("\nA média dos valores do vetor A é:.......... %.1f", mediavetor);
 		System.out.println();
-		System.out.printf("\nOs valores do vetor SC são:\n");
+		System.out.printf("\nOs valores do vetor SC são:");
 		System.out.println();
 
 		for (int j = 0; j < coluna; j++) {
-			System.out.printf("%d  ", SC[j]);
+			System.out.printf("%d      ", SC[j]);
 		}
 
 		System.out.println("\n\nImpressão da matriz em formato matricial\n");

@@ -35,8 +35,8 @@ public class Exercicio_50_vetores {
 
 		for (i = 0; i < limiteVetor1; i++) {
 			if (vetor1[i] % 2 == 0) {
+				
 				somaPar = 0;
-
 				for (j = 0; j < limiteVetor2; j++) {
 					somaPar += vetor2[j];
 

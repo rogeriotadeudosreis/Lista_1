@@ -8,7 +8,7 @@ public class Exercicio_47_feito_em_classe_pelo_prof {
 		int[] vetor1 = new int[tamanho];
 		int[] vetor2 = new int[tamanho];
 		int[] vetorIntercalacao = new int[vetor1.length + vetor2.length];
-		int j, k;
+		
 		
 		for(int i = 0; i < vetor1.length; i++)
 		{
@@ -24,8 +24,8 @@ public class Exercicio_47_feito_em_classe_pelo_prof {
 			vetor2[i] = sorteia(1, 50);
 		}
 		
-		 j = 0; //indice para controlar o vetor1
-		 k = 0; //indice para controlar o vetor2
+		 int j = 0; //indice para controlar o vetor1
+		 int k = 0; //indice para controlar o vetor2
 		for(int i = 0 ; i < vetorIntercalacao.length; i++)
 		{
 			if( i % 2 == 0) //filtra posicoes pares
